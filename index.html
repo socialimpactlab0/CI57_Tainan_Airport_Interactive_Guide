@@ -36,7 +36,7 @@ button:disabled{cursor:not-allowed;opacity:.45}.shell{width:min(1160px,calc(100%
 <h2 class="section-title">第一部分｜10 個大流程</h2><p class="small-desc">從台南高鐵站到登上 CI57。點擊任一項，可直接查看當站詳細步驟。</p>
 <div class="route-grid" id="majorRoute"></div>
 <div class="callout blue"><b>方向記憶法：</b>高鐵在「桃園站」下車，還要走到機場捷運 <b>A18</b>，搭 <b>往機場／台北方向</b>的列車，在 <b>A13 第二航廈</b>下車，再到 3 樓找華航櫃台。</div>
-<div class="callout"><b>出發前先確認：</b>護照及澳洲簽證（ETA 等）已有效核准。重要物品不要放託運箱；台灣 2026 年 4 月起每人行動電源限帶最多 2 個，且只能隨身攜帶、機上不得使用或充電。</div>
+<div class="callout"><b>✅ 澳洲 ETA 已核准：</b>ETA 601 於 2026/10/05 核准，有效入境期限至 2027/10/05；每次最長停留 3 個月。簽證已與申請時的護照連結，出發前仍須核對目前護照資料相同。重要物品不要放託運箱；台灣 2026 年 4 月起每人行動電源限帶最多 2 個，且只能隨身攜帶、機上不得使用或充電。</div>
 </div></section>
 <section class="view" id="view-guide" role="tabpanel">
 <div class="shell"><div class="kicker">LIVE GUIDE / 當天照著走</div><h2 class="h2">第二部分｜15 個詳細步驟</h2><p class="desc">每一步都有操作順序、指標怎麼看、注意事項，以及出錯時怎麼辦。可以逐項勾選，也可以只按「完成這一步」。</p>
@@ -54,7 +54,7 @@ button:disabled{cursor:not-allowed;opacity:.45}.shell{width:min(1160px,calc(100%
 <div class="line-buttons"><a class="button outline" href="https://www.thsrc.com.tw/" target="_blank" rel="noopener">高鐵官網查車次 ↗</a><a class="button outline" href="https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A18" target="_blank" rel="noopener">機捷 A18 時刻表 ↗</a></div><p class="muted">交通試算只是預估；未納入事故、誤點、驗票排隊、航班異動。若已知實際的機捷班次，請依當日情況調整估計分鐘。</p>
 </div></div></section>
 <section class="view" id="view-check" role="tabpanel"><div class="shell"><div class="kicker">PRE-DEPARTURE / 避免漏帶</div><h2 class="h2">第四部分｜行前檢查表</h2><p class="desc">每一個方框都可以勾選，會自動保存。建議前一天檢查一次，出門前再看一次。</p><div class="card"><div class="progress-label"><span>行前完成進度</span><span id="checkCount">0 / 16</span></div><div class="track"><div id="checkProgressBar"></div></div><div class="check-layout" id="checkList" style="margin-top:19px"></div><div class="divider"></div><div class="line-buttons"><button type="button" class="button outline small" id="clearCheckBtn">清除行前勾選</button><button type="button" class="button outline small" id="copyChecklist">複製清單文字</button></div><p class="feedback" id="copyCheckFeedback" role="status"></p></div>
-<div class="callout blue">護照、信用卡、手機、行動電源、藥品、機票及 ETA 核准資料，建議全部放隨身背包。沒有澳洲有效簽證核准，可能無法登機。</div>
+<div class="callout blue"><b>✅ ETA 已完成申請並核准</b>（核准日 2026/10/05；最晚入境日 2027/10/05）。<br>仍待你親自核對：目前護照與 ETA 通知資料完全一致。護照、手機、行動電源、藥品、機票及 ETA 核准 PDF 建議隨身攜帶；PDF 不要上傳公開網站。</div>
 </div></section>
 <section class="view" id="view-help" role="tabpanel"><div class="shell"><div class="kicker">HELP CENTER / 當天出狀況</div><h2 class="h2">第五部分｜不會走、找不到、來不及怎麼辦</h2><p class="desc">先用「問路小卡」請現場人員協助，或搜尋你的問題。</p>
 <h3 class="section-title" style="margin-top:12px">直接給站務或地勤看的問路卡</h3><div class="grid2" id="phraseCards"></div>
@@ -64,7 +64,7 @@ button:disabled{cursor:not-allowed;opacity:.45}.shell{width:min(1160px,calc(100%
 </main><footer><div class="shell">CI57 互動式出發指南 · 製作日 2026/10/26 · 操作進度保存在本機瀏覽器<br>適用範圍：台南出發至登上華航 CI57；不包含抵達澳洲後的行程。</div></footer>
 <script>
 const STAGES=[
-{id:1,title:'出門前最後 15 分鐘',sub:'檢查證件、行李、交通與手機',how:['拿出護照，確認照片、英文姓名與機票一致，並確認有效期限符合澳洲入境要求。','在手機中開啟機票或訂位通知，確認「11/11 桃園 TPE 第二航廈」「CI57」「23:45」「11/12 12:05 墨爾本 MEL 第二航廈」。','確認澳洲簽證／ETA 已核准。準備核准通知的離線截圖或檔案；電子簽證一般與護照連結。','高鐵票放手機易開啟的位置；若是紙票，放隨身背包夾層。','再次確認你是去「高鐵台南站」，不是台鐵台南火車站；兩站不同地方。','出門前把手機充足電，確認充電線、錢包、眼鏡、必要藥品、護照都在身上。','以你家到高鐵台南站的實際交通時間，另外往前回推出門時間；本指南沒有假設你的住家地址。'],look:'護照 Passport／機票 E-ticket／澳洲 ETA 核准／高鐵台南站 THSR Tainan',warn:'護照、信用卡、藥品、手機與行動電源放隨身背包，不要託運。台灣一般護照可申請澳洲 ETA，但必須是已核准狀態。',help:'若護照、簽證或訂位日期有問題，先處理證件或聯絡華航；不要到機場才發現無法登機。',source:'https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601'},
+{id:1,title:'出門前最後 15 分鐘',sub:'檢查證件、行李、交通與手機',how:['拿出護照，確認照片、英文姓名與機票一致，並確認有效期限符合澳洲入境要求。','在手機中開啟機票或訂位通知，確認「11/11 桃園 TPE 第二航廈」「CI57」「23:45」「11/12 12:05 墨爾本 MEL 第二航廈」。','澳洲 ETA 已於 2026/10/05 核准。核對使用的護照與簽證資料一致，並把 ETA 核准 PDF 存在手機離線檔案內。','高鐵票放手機易開啟的位置；若是紙票，放隨身背包夾層。','再次確認你是去「高鐵台南站」，不是台鐵台南火車站；兩站不同地方。','出門前把手機充足電，確認充電線、錢包、眼鏡、必要藥品、護照都在身上。','以你家到高鐵台南站的實際交通時間，另外往前回推出門時間；本指南沒有假設你的住家地址。'],look:'護照 Passport／機票 E-ticket／澳洲 ETA 核准／高鐵台南站 THSR Tainan',warn:'護照、信用卡、藥品、手機與行動電源放隨身背包，不要託運。台灣一般護照可申請澳洲 ETA，但必須是已核准狀態。',help:'若護照、簽證或訂位日期有問題，先處理證件或聯絡華航；不要到機場才發現無法登機。',source:'https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601'},
 {id:2,title:'抵達高鐵台南站：找入口、看車次',sub:'建議提早約 25–30 分鐘到高鐵站',how:['進入高鐵台南站大廳，先找到「列車資訊看板」或「北上列車／Northbound」。','打開電子車票或準備紙票，核對車次、出發時間、車廂號、座位號與終點。','確認這個車次會停「高鐵桃園站」；不是每一班停站完全相同。','需要上洗手間或裝水，盡量在過閘門或上車前完成。','如果你拿手機 QR 車票，在通過驗票閘門時依現場指示讓 QR code 朝讀取位置掃描。','過閘門後看月台看板，依「北上」方向前往正確月台，別只跟人群走。'],look:'北上 Northbound／桃園 Taoyuan／車次 Train No.／月台 Platform',warn:'請以購買的高鐵車次和當日月台公告為準。高鐵台南站位於歸仁，和台鐵台南站不同。',help:'找不到月台或掃票失敗，直接把票打開給站務人員看，說「我要去高鐵桃園站，請問從哪裡上車？」',source:'https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c'},
 {id:3,title:'在台南上高鐵：找車廂、放行李',sub:'搭「北上」列車，目標只到高鐵桃園站',how:['在月台地面或上方標示找到你車票的車廂編號。','排隊等候旅客先下車，再從車門上車；大型行李與其他人保持距離。','依票面「車廂／Car」與「座位／Seat」找位置。','行李箱可依列車實際空間與規範放在行李放置區或適當位置，勿堵住走道或車門。','手機可設定提醒：列車預定抵達桃園站前 10 分鐘注意廣播。','聽到「桃園站 Taoyuan」即準備下車，確認護照與手機都在背包裡。'],look:'北上往台北／南港 Northbound／Taoyuan 桃園',warn:'不要把「桃園站」和台北站搞混；你的目的地就是「桃園」，不用搭到台北。',help:'如果不確定何時下車，直接請車服人員幫忙提醒「桃園站下車」。',source:'https://www.thsrc.com.tw/ArticleContent/a3b630bb-1066-4352-a1ef-58c7b4e8ef7c'},
 {id:4,title:'高鐵桃園站下車：先走出高鐵閘門',sub:'下車後轉乘的是「桃園機場捷運」',how:['在「高鐵桃園站 THSR Taoyuan Station」下車，先點清隨身行李。','跟著「出口 Exit／站內大廳」指標上樓，通過高鐵出站驗票閘門。','出閘門後，開始找寫有「桃園機場捷運 Airport MRT／A18」的紫色系機場捷運指標。','不要跟著「台鐵桃園站」或客運出站標示走；高鐵桃園站與台鐵桃園站也不是同一站。','有大行李時，優先選電梯，不要勉強拉著箱子上手扶梯。'],look:'桃園機場捷運 Taoyuan Airport MRT／A18 高鐵桃園站',warn:'高鐵列車並不直接開到機場。這段要另行轉乘捷運，建議至少預留 15 分鐘找路與驗票。',help:'迷路時直接問高鐵站務：「機場捷運 A18 入口在哪裡？」',source:'https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/dep-A18'},
@@ -80,14 +80,14 @@ const STAGES=[
 {id:14,title:'候機區：找登機門、等待廣播',sub:'提前抵達登機門，建議起飛前至少 40 分鐘',how:['拿登機證看「Gate／登機門」號碼；若尚未顯示，先看機場航班看板。','走到航班看板核對班號 CI57、目的地 Melbourne、預定登機時間及登機門有沒有變更。','依指標到登機門；機場很大，有些門走路時間較長，先找到位置再逛商店。','到達登機門後，看看門口電子螢幕是否顯示你的航空公司與航班。','比登機證的「Boarding Time」更早抵達，建議至少在起飛前 40 分鐘就到門口。','坐下後可上洗手間、整理物品；登機前持續留意螢幕和廣播，以防更換登機門。','準備好護照、登機證，確認自己的搭乘組別／Group 或 Zone，等人員宣布再排隊。'],look:'Gate 登機門／Boarding Time 登機時間／Final Call 最後登機廣播',warn:'登機時間≠起飛時間；CI57 23:45 起飛，不是 23:45 才開始排隊。登機門也可能在報到後變更。',help:'如果螢幕上找不到你的班機，請拿著登機證問登機門地勤或服務台，不要自行猜門號。',source:'https://www.china-airlines.com/us/zh/prepare-for-the-fly/information/boarding-requirements/boarding-and-transfer'},
 {id:15,title:'正式登機：掃票、走空橋、找到自己的座位',sub:'完成全程流程，準備飛往墨爾本',how:['聽華航地勤廣播，依你的艙等與登機組別排隊；不要看到有人排隊就立刻跟上。','輪到你時出示登機證，依指示掃碼，可能再次核對護照。','走空橋或依地勤指示搭接駁車至飛機；沿路照標示前進。','進入機艙後找到座位號，例如「35A」：35 是排數，A 是該排的座位字母。','大件手提行李放上方行李櫃，小型背包依組員指示放在前方座椅下或適當位置。','手機調整飛航模式，扣好安全帶，聽空服員的安全示範。','確認護照及手機放在自己找得到的地方；長途航班需要的眼鏡、耳機、藥品可先備在小袋中。','完成！接下來就是在機上飛往墨爾本。'],look:'Boarding 登機／Seat 座位／Row 排數／Group 或 Zone 登機順序',warn:'登機門掃碼成功才代表正式上機；如果被攔下，通常是組別未到、證件需查核或登機證有問題，請找地勤協助。',help:'找不到座位時直接把登機證給空服員看：「Excuse me, where is my seat?」',source:'https://www.china-airlines.com/us/zh/prepare-for-the-fly/information/boarding-requirements/boarding-and-transfer'}
 ];
-const CHECKS=['護照已放進隨身背包，姓名與機票相同','澳洲 ETA／簽證已核准且護照資料正確','CI57／11月11日23:45／墨爾本 MEL 已核對','高鐵台南 → 桃園車票／時間已確認','從家裡前往高鐵台南站的方式已安排','華航托運行李重量／件數符合票規','行李箱有姓名／聯絡方式標示（避免暴露過多個資）','護照、手機、錢包、藥品沒有放託運','行動電源在隨身背包，最多 2 個','行動電源及備用電池端子已妥善保護','隨身液體分裝合規（單瓶 ≤100 mL）','澳洲住址及女兒聯絡方式已備好','手機已充電，漫遊或 eSIM 已準備','信用卡、少量現金、緊急電話已備妥','機票與 ETA 核准資料可離線查看','旅遊保險與返台訂位資料已整理'];
+const CHECKS=['護照已放進隨身背包，姓名與機票相同','✅ ETA 已核准（2026/10/05）；我已核對目前護照與 ETA 資料一致','CI57／11月11日23:45／墨爾本 MEL 已核對','高鐵台南 → 桃園車票／時間已確認','從家裡前往高鐵台南站的方式已安排','華航托運行李重量／件數符合票規','行李箱有姓名／聯絡方式標示（避免暴露過多個資）','護照、手機、錢包、藥品沒有放託運','行動電源在隨身背包，最多 2 個','行動電源及備用電池端子已妥善保護','隨身液體分裝合規（單瓶 ≤100 mL）','澳洲住址及女兒聯絡方式已備好','手機已充電，漫遊或 eSIM 已準備','信用卡、少量現金、緊急電話已備妥','機票與 ETA 核准資料可離線查看','旅遊保險與返台訂位資料已整理'];
 const FAQS=[
 ['高鐵到桃園站就可以直接辦華航登機嗎？','不行。高鐵桃園站不是機場。還要出高鐵站，換乘機場捷運 A18，搭往台北方向的列車，在 A13 第二航廈站下車，再上到 3F 華航報到大廳。'],
 ['如果把機捷搭反方向怎麼辦？','A18 往 A19、A20 的方向是反方向。下一站先下車，問站務人員如何轉乘往 A13／機場方向，不要一直坐下去。'],
 ['如果我先到 A12 第一航廈呢？','A12 是第一航廈；華航飛澳洲目前使用第二航廈。向捷運人員確認後再搭至 A13，或照航廈間交通指標處理。'],
 ['我不會網路報到，能直接去華航櫃台嗎？','可以。拿護照、訂位資料與必要的簽證資訊找人工櫃台即可；只是建議提早到機場以免排隊。'],
 ['報到完可以馬上進安檢嗎？','通常可以，但請先確認託運行李完成及地勤是否要求稍候。護照、登機證及行李收據務必拿好。'],
-['已經上傳澳洲 ETA 申請就可以出發嗎？','不可以只憑送出申請。要確認簽證已獲核准、資料與護照一致且仍有效。沒有適當入境許可，航空公司可能不讓你登機。'],
+['澳洲 ETA 簽證目前的狀態？','✅ 你的 ETA 601 已於 2026/10/05 核准，最晚入境日 2027/10/05，每次最多可停留三個月。實際出發前仍要核對護照資料完全一致；若換過護照須重新申請。'],
 ['能帶寶特瓶水過安檢嗎？','裝有超過 100 mL 水的瓶子通常不能作為一般隨身液體通過。可先倒空水壺，通過安檢後再於允許的地方裝水或買飲料。'],
 ['行動電源能不能託運？飛機上可以用嗎？','行動電源不能託運，只能隨身。依台灣 2026/4/8 起規定，每人最多兩個，航程中不可用行動電源充電或替其他設備供電；仍須符合個別容量與航空公司規則。'],
 ['第二航廈報到櫃台是固定幾號？','華航有網路報到／自助託運專屬櫃台，但櫃位與開放時間可能調整。最可靠的是到 3F 看當日航班看板及華航指示，找適合你票種和航班的櫃台。'],
