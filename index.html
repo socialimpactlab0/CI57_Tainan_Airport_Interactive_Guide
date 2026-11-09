@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#13293d">
 <meta name="description" content="2026年11月11日：台南高鐵→高鐵桃園→桃園機場捷運A18到A13→華航CI57登機互動指南。含詳細操作、行前勾選及可自訂高鐵時間。">
-<title>11/11 台南→桃園機場→CI57｜互動式登機指南</title>
+<title>11/11 台南→墨爾本｜CI57互動式登機指南 V6</title>
 <style>
 :root{--navy:#13293d;--blue:#1e5879;--teal:#087e78;--teal-light:#d9f1eb;--accent:#e6ac60;--text:#1b2f3c;--muted:#647887;--bg:#f5f7f7;--line:#dbe4e7;--white:#fff;--danger:#a63b2f;--soft-orange:#fff4e2;--radius:20px;--shadow:0 14px 45px rgba(19,41,61,.06)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);margin:0;color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;line-height:1.75;font-size:16px}button,input,select{font:inherit}button{cursor:pointer}a{color:#126c84;text-underline-offset:4px}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #efb760;outline-offset:2px}
@@ -21,11 +21,11 @@ button:disabled{cursor:not-allowed;opacity:.45}.shell{width:min(1160px,calc(100%
 @media(max-width:780px){.hero{grid-template-columns:1fr;padding:26px 23px;gap:23px}.boarding-card{padding:18px}.hero h1{font-size:34px}.quick-grid{grid-template-columns:1fr 1fr}.route-grid{grid-template-columns:repeat(2,1fr)}.route-card:nth-child(n)::after{display:none}.guide-grid{display:block}.step-index{display:none}.mobile-step-select{display:block}.progress-box{flex-wrap:wrap}.grid3{grid-template-columns:1fr}.results{grid-template-columns:repeat(2,1fr)}.nav-link{padding:13px 14px}}
 @media(max-width:530px){.nav-full{display:none}.nav-short{display:inline}.nav-list{justify-content:space-between;gap:0}.nav-link{padding:12px 7px;font-size:12px;flex:1;text-align:center}.shell{width:calc(100% - 24px)}.header-content{min-height:60px}.header{position:sticky}.nav{top:60px}.logo{font-size:13px}.flight-mini{display:none}.top-right{gap:5px}.round-btn{font-size:11px;padding:6px 9px}.view{padding:20px 0 50px}.hero{border-radius:19px}.hero h1{font-size:30px}.hero .buttons .button{flex:1;min-width:140px}.quick-grid{grid-template-columns:1fr;gap:10px}.quick-tile{padding:13px 16px}.quick-tile strong{font-size:22px}.progress-box{padding:16px;gap:12px}.route-grid{gap:9px}.route-card{min-height:128px;padding:13px 11px}.route-card .route-name{font-size:15px}.card{padding:16px}.grid2,.check-layout,.source-links{grid-template-columns:1fr}.results{gap:8px}.result{padding:12px}.result strong{font-size:20px}.step-heading{padding:19px 17px}.step-body{padding:18px 15px}.step-actions{padding:15px}.step-actions .button{flex:1}.step-footnav{width:100%}.micro{padding:10px;font-size:14px}.boarding-card .big{font-size:31px}.faq-item{padding:15px 13px}}
 @media print{.header,.nav,.button,.step-index,.mobile-step-select,.progress-box,footer{display:none!important}.view{display:block!important;page-break-after:always;padding:10px 0}.hero{color:#172f3c;background:#fff;box-shadow:none;border:1px solid #ddd}.hero p,.hero .kicker{color:#1a5360}.boarding-card{color:#102c3b;border:1px solid #d0dde1}.boarding-card small{color:#597a84}.route-grid{grid-template-columns:repeat(5,1fr)}.step-panel{page-break-inside:avoid}.step-warn,.step-info,.step-help{print-color-adjust:exact}}
-</style>
+.nav-list{overflow-x:auto;scrollbar-width:thin;justify-content:flex-start}.nav-link{white-space:nowrap;flex-shrink:0}@media(max-width:530px){.nav-link{flex:0 0 auto;padding:12px 11px}}.extra-section{max-width:850px;margin:0 auto}.extra-section h3{color:#13293d}.extra-section .card{margin:14px 0}.extra-list{padding-left:24px}.extra-list li{margin:9px 0}.choice-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:9px 0;border-bottom:1px solid #e4ebec}.choice-row label{display:flex;gap:4px;align-items:center}.small-note{background:#fff3e2;border:1px solid #f0ca8e;border-radius:12px;padding:14px;margin:15px 0}.extra-action{padding:8px 14px;border-radius:10px;background:#14617c;color:#fff;border:0}.extra-section table{border-collapse:collapse;width:100%}.extra-section td{border-bottom:1px solid #ddd;padding:9px 6px;vertical-align:top}.extra-section td:first-child{width:40%}</style>
 </head>
 <body>
 <header class="header"><div class="shell header-content"><div class="logo"><span class="logo-icon" aria-hidden="true">✈</span><span>登機一步一步</span></div><div class="top-right"><span class="flight-mini">11/11 · CI57 · T2</span><button class="round-btn" id="topNextBtn" type="button">接續上次進度 →</button></div></div></header>
-<nav class="nav" aria-label="主要頁面"><div class="shell nav-list" role="tablist" aria-label="網頁功能"><button class="nav-link" type="button" data-tab="home" role="tab" aria-selected="true"><span class="nav-full">① 大流程</span><span class="nav-short">① 大流程</span></button><button class="nav-link" type="button" data-tab="guide" role="tab" aria-selected="false"><span class="nav-full">② 逐步操作</span><span class="nav-short">② 步驟</span></button><button class="nav-link" type="button" data-tab="time" role="tab" aria-selected="false"><span class="nav-full">③ 時間安排</span><span class="nav-short">③ 時間</span></button><button class="nav-link" type="button" data-tab="check" role="tab" aria-selected="false"><span class="nav-full">④ 行前檢查</span><span class="nav-short">④ 清單</span></button><button class="nav-link" type="button" data-tab="help" role="tab" aria-selected="false"><span class="nav-full">⑤ 問題處理</span><span class="nav-short">⑤ 求助</span></button></div></nav>
+<nav class="nav" aria-label="主要頁面"><div class="shell nav-list" role="tablist" aria-label="網頁功能"><button class="nav-link" type="button" data-tab="home" role="tab" aria-selected="true"><span class="nav-full">① 大流程</span><span class="nav-short">① 大流程</span></button><button class="nav-link" type="button" data-tab="guide" role="tab" aria-selected="false"><span class="nav-full">② 逐步操作</span><span class="nav-short">② 步驟</span></button><button class="nav-link" type="button" data-tab="time" role="tab" aria-selected="false"><span class="nav-full">③ 時間安排</span><span class="nav-short">③ 時間</span></button><button class="nav-link" type="button" data-tab="check" role="tab" aria-selected="false"><span class="nav-full">④ 行前檢查</span><span class="nav-short">④ 清單</span></button><button class="nav-link" type="button" data-tab="help" role="tab" aria-selected="false"><span class="nav-full">⑤ 問題處理</span><span class="nav-short">⑤ 求助</span></button></div><button class="nav-link" type="button" data-tab="health" role="tab" aria-selected="false">⑥ 保健</button><button class="nav-link" type="button" data-tab="wifi" role="tab" aria-selected="false">⑦ Wi-Fi</button><button class="nav-link" type="button" data-tab="arrival" role="tab" aria-selected="false">⑧ 入境卡</button></nav>
 <main>
 <section class="view active" id="view-home" role="tabpanel">
 <div class="shell">
@@ -61,7 +61,34 @@ button:disabled{cursor:not-allowed;opacity:.45}.shell{width:min(1160px,calc(100%
 <h3 class="section-title">常見問題</h3><label class="label" for="faqSearch">搜尋問題，例如：機捷、護照、液體、登機門</label><input id="faqSearch" class="field" type="search" placeholder="輸入關鍵字來篩選問題…" style="margin-bottom:14px"><div class="card" id="faqList" style="padding:0"></div>
 <h3 class="section-title">官方資料查核</h3><p class="small-desc">以下連結需網路才能開啟；本指南本身下載後可離線閱讀。</p><div class="source-links" id="sourceLinks"></div>
 <div class="callout">這個網頁是個人旅行操作指南，不是機票，也不會自動查當天的高鐵車次或航班異動。櫃台、登機門及列車月台仍以現場看板為準。</div></div></section>
-</main><footer><div class="shell">CI57 互動式出發指南 · 製作日 2026/10/26 · 操作進度保存在本機瀏覽器<br>適用範圍：台南出發至登上華航 CI57；不包含抵達澳洲後的行程。</div></footer>
+
+<section class="view" id="view-health" role="tabpanel"><div class="shell extra-section"><div class="kicker">IN-FLIGHT COMFORT</div><h2 class="h2">第六部分｜長途飛行保健</h2><p class="desc">你最在意的是腰痠、臀部不舒服。帶少量用品、定時活動即可。</p>
+<div class="card"><h3>飛行途中 5 項提醒</h3><div id="healthTasks">
+<label class="choice-row"><input type="checkbox" data-health="0"> 選靠走道座位；安全時每 1～2 小時起身走動</label>
+<label class="choice-row"><input type="checkbox" data-health="1"> 坐著時腳踝上下踩 20 下，改變坐姿</label>
+<label class="choice-row"><input type="checkbox" data-health="2"> 500～750 mL 空水壺過安檢，安檢後裝水，機上適量喝水</label>
+<label class="choice-row"><input type="checkbox" data-health="3"> 穿寬鬆長褲，薄外套捲好墊在腰後自然凹陷處</label>
+<label class="choice-row"><input type="checkbox" data-health="4"> 視需要準備眼罩、耳塞；依疲倦程度休息</label></div><p id="healthCount" class="muted">已完成 0/5</p></div>
+<div class="small-note">若有血栓病史、近期手術等風險，出發前詢問醫師；壓力襪不是人人必備。感覺腰部被墊得更痛就把外套捲小或拿掉。</div></div></section>
+<section class="view" id="view-wifi" role="tabpanel"><div class="shell extra-section"><div class="kicker">CHINA AIRLINES ONBOARD</div><h2 class="h2">第七部分｜華航機上 Wi-Fi 連線</h2><p class="desc">依當天航機設備與機組員指示操作，機上網路服務可能暫時中斷。</p>
+<div class="card"><ol class="extra-list"><li>飛機起飛後，依機組指示將手機維持「飛航模式」。</li><li>手動開啟手機 Wi-Fi，選擇 <b>Wi-Fi Onboard</b>。</li><li>等待登入畫面；如沒有跳出，可嘗試用瀏覽器打開 <b>www.cal-wifi.com</b>（依機型顯示的官方入口為準）。</li><li>在登入頁面選擇適用的免費文字訊息或付費方案，依畫面驗證。</li><li>完成後，試著用 LINE 發送純文字訊息；免費文字方案不代表可看影片或瀏覽一般網頁。</li></ol>
+<div class="small-note"><b>手機離線提醒：</b>機上免費文字訊息通常不能保證打開 GitHub 網站。出發前將指南 HTML 儲存到手機離線使用。</div>
+<a href="https://www.china-airlines.com/tw/zh/prepare-for-the-fly/In-flight/wifi" target="_blank" rel="noopener">華航 Wi-Fi 官方說明 ↗</a></div></div></section>
+<section class="view" id="view-arrival" role="tabpanel"><div class="shell extra-section"><div class="kicker">MELBOURNE ARRIVAL</div><h2 class="h2">第八部分｜澳洲入境卡＋SmartGate</h2><p class="desc">2026/11/12 抵達墨爾本。以下英文資料可用於實際填卡；姓名、生日、護照資料請照本人護照填寫。</p>
+<div class="card"><h3>入境卡英文填寫小抄</h3><table>
+<tr><td>Flight number 班機</td><td><b>CI57</b></td></tr>
+<tr><td>Address in Australia</td><td><b>38 HOWARD ST, NORTH MELBOURNE VIC 3051</b></td></tr>
+<tr><td>Country boarded</td><td><b>TAIWAN</b></td></tr>
+<tr><td>State 州</td><td><b>VIC</b></td></tr>
+<tr><td>入境身分</td><td><b>B — Visitor or temporary entrant</b></td></tr>
+<tr><td>Length of stay</td><td><b>9 DAYS</b>（11/12 至 11/20）</td></tr>
+<tr><td>Country of residence</td><td><b>TAIWAN</b></td></tr>
+<tr><td>Main reason</td><td><b>3 — Visiting friends or relatives</b>（若主要探親）</td></tr>
+</table><button type="button" id="copyArrival" class="extra-action">複製英文資料</button>
+<p class="small-note">入境卡以英文填寫、需填正反兩面。<b>以下 11 題只做申報練習，預設不替你選 No；請依實際攜帶物品逐題回答。</b></p>
+<h3>11 題申報練習（請自行選擇）</h3><div id="declarationPractice"></div><p class="muted" id="declarationCount">已回答 0／11 題</p>
+<a href="https://www.abf.gov.au/entering-leaving-australia/files/ipc-sample-chinese-traditional.pdf" target="_blank" rel="noopener">澳洲官方繁體中文入境卡對照 ↗</a>
+</div><div class="card"><h3>墨爾本 SmartGate 動線</h3><ol class="extra-list"><li>下飛機，跟著 <b>Arrivals / Passport Control</b> 指標。</li><li>到 SmartGate Kiosk 依畫面指示掃描護照，領取小票（依現場設備與指示）。</li><li>到自動閘門看鏡頭進行臉部辨識。</li><li>前往 <b>Baggage Claim</b> 領託運行李。</li><li>帶護照、入境卡、小票及行李，通過 <b>Customs / Biosecurity</b>。</li><li>完成檢查後，走到 <b>Arrivals Hall</b> 接機大廳。</li></ol><div class="small-note">若 SmartGate 失敗，現場人員會引導人工通關。通過閘門不代表已完成海關檢疫。</div></div></div></section></main><footer><div class="shell">CI57 互動式出發指南 · 製作日 2026/10/26 · 操作進度保存在本機瀏覽器<br>適用範圍：台南出發、華航 CI57、墨爾本入境。更新版 V6（含 ETA 已核准）。</div></footer>
 <script>
 const STAGES=[
 {id:1,title:'出門前最後 15 分鐘',sub:'檢查證件、行李、交通與手機',how:['拿出護照，確認照片、英文姓名與機票一致，並確認有效期限符合澳洲入境要求。','在手機中開啟機票或訂位通知，確認「11/11 桃園 TPE 第二航廈」「CI57」「23:45」「11/12 12:05 墨爾本 MEL 第二航廈」。','澳洲 ETA 已於 2026/10/05 核准。核對使用的護照與簽證資料一致，並把 ETA 核准 PDF 存在手機離線檔案內。','高鐵票放手機易開啟的位置；若是紙票，放隨身背包夾層。','再次確認你是去「高鐵台南站」，不是台鐵台南火車站；兩站不同地方。','出門前把手機充足電，確認充電線、錢包、眼鏡、必要藥品、護照都在身上。','以你家到高鐵台南站的實際交通時間，另外往前回推出門時間；本指南沒有假設你的住家地址。'],look:'護照 Passport／機票 E-ticket／澳洲 ETA 核准／高鐵台南站 THSR Tainan',warn:'護照、信用卡、藥品、手機與行動電源放隨身背包，不要託運。台灣一般護照可申請澳洲 ETA，但必須是已核准狀態。',help:'若護照、簽證或訂位日期有問題，先處理證件或聯絡華航；不要到機場才發現無法登機。',source:'https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601'},
@@ -135,7 +162,7 @@ let state={step:1,done:{},micro:{},check:{},inputs:{}};
 try{const x=JSON.parse(localStorage.getItem(STORE)||'{}');if(x&&typeof x==='object')state={...state,...x,done:x.done||{},micro:x.micro||{},check:x.check||{},inputs:x.inputs||{}}}catch(e){}
 function persist(){try{localStorage.setItem(STORE,JSON.stringify(state))}catch(e){}}
 let activeTab='home';
-function tab(name){if(!['home','guide','time','check','help'].includes(name))return;activeTab=name;$$('.view').forEach(e=>e.classList.toggle('active',e.id==='view-'+name));$$('[data-tab]').forEach(e=>e.setAttribute('aria-selected',String(e.dataset.tab===name)));window.scrollTo({top:0,behavior:'instant'});if(name==='guide')renderStep();if(name==='home')renderHome();if(name==='time')calculateTime()}
+function tab(name){if(!['home','guide','time','check','help','health','wifi','arrival'].includes(name))return;activeTab=name;$$('.view').forEach(e=>e.classList.toggle('active',e.id==='view-'+name));$$('[data-tab]').forEach(e=>e.setAttribute('aria-selected',String(e.dataset.tab===name)));window.scrollTo({top:0,behavior:'instant'});if(name==='guide')renderStep();if(name==='home')renderHome();if(name==='time')calculateTime()}
 function goStep(id){state.step=Math.max(1,Math.min(STAGES.length,Number(id)||1));persist();tab('guide')}
 function nextIncomplete(){const next=STAGES.find(s=>!state.done[s.id]);goStep(next?next.id:15)}
 function renderHome(){const count=STAGES.filter(s=>state.done[s.id]).length;byId('homeProgressCount').textContent=count+' / '+STAGES.length+' 步';byId('homeProgressBar').style.width=(100*count/STAGES.length)+'%';const next=STAGES.find(s=>!state.done[s.id]);byId('nextStepName').textContent=next?'下一步：'+next.title:'15 步已全部完成！';byId('majorRoute').innerHTML=MAJOR.map(([title,sub,start],i)=>{const end=(MAJOR[i+1]?.[2]||16)-1;const ok=STAGES.filter(s=>s.id>=start&&s.id<=end).every(s=>state.done[s.id]);return `<button type="button" class="route-card ${ok?'done':''}" data-jump="${start}"><span class="num">${String(i+1).padStart(2,'0')} ${ok?'✓ 已完成':''}</span><span class="route-name">${esc(title)}</span><span class="sub">${esc(sub)}</span></button>`}).join('')}
@@ -162,4 +189,14 @@ function wire(){document.addEventListener('click',e=>{const go=e.target.closest(
  }
 function boot(){renderHome();renderStep();renderChecks();renderHelp();for(const id of ['hsrDepart','hsrArrive','transferMinutes','mrtMinutes','terminalMinutes'])if(state.inputs[id]!==undefined)byId(id).value=state.inputs[id];calculateTime();wire();if(location.hash==='#guide')tab('guide');}
 boot();
+
+const declQs=['受限制物品（如特定藥品、武器）','超過免稅額的酒類或菸草','超過免稅門檻的海外購物及禮物','商業貨物或樣品','澳幣一萬元以上或等值現金','肉類、魚、蛋、乳製品、水果、蔬菜','種子、植物、草藥、木製品等','動物製品、蜂產品、貝殼等','泥土、沾土用品、曾使用的戶外裝備','最近30天農場、農場動物、荒野或淡水接觸史','過去6天到過特定黃熱病相關地區'];
+const extrakey='ci57_v6_extras';
+let extra={};try{extra=JSON.parse(localStorage.getItem(extrakey)||'{}')}catch(e){}
+function saveExtra(){try{localStorage.setItem(extrakey,JSON.stringify(extra))}catch(e){}}
+function refreshExtra(){document.querySelectorAll('[data-health]').forEach(el=>el.checked=!!extra['h'+el.dataset.health]);document.getElementById('healthCount').textContent='已完成 '+Array.from(document.querySelectorAll('[data-health]')).filter(el=>el.checked).length+'/5';document.getElementById('declarationPractice').innerHTML=declQs.map((q,i)=>'<div class="choice-row"><span style="flex:1">'+(i+1)+'. '+q+'</span><label><input type="radio" name="decl'+i+'" value="YES" '+(extra['d'+i]==='YES'?'checked':'')+'> Yes</label><label><input type="radio" name="decl'+i+'" value="NO" '+(extra['d'+i]==='NO'?'checked':'')+'> No</label></div>').join('');updateDeclCount()}
+function updateDeclCount(){document.getElementById('declarationCount').textContent='已回答 '+declQs.filter((_,i)=>extra['d'+i]).length+'／11 題（僅練習，不能取代正式入境卡）'}
+document.addEventListener('change',e=>{if(e.target.matches('[data-health]')){extra['h'+e.target.dataset.health]=e.target.checked;saveExtra();refreshExtra()}if(e.target.matches('input[name^="decl"]')){extra['d'+e.target.name.slice(4)]=e.target.value;saveExtra();updateDeclCount()}});
+document.getElementById('copyArrival').addEventListener('click',()=>{safeCopy('FLIGHT: CI57\nADDRESS: 38 HOWARD ST, NORTH MELBOURNE VIC 3051\nSTATE: VIC\nCOUNTRY BOARDED: TAIWAN\nCATEGORY: B - VISITOR\nLENGTH OF STAY: 9 DAYS\nCOUNTRY OF RESIDENCE: TAIWAN\nPURPOSE: 3 - VISITING FRIENDS OR RELATIVES');document.getElementById('copyArrival').textContent='已複製 ✓'});
+refreshExtra();
 </script></body></html>
